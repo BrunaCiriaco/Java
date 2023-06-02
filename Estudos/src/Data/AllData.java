@@ -39,7 +39,7 @@ public class AllData {
 	private void dados03(String item03){
 		String[] t = item03.split("-");
 		String quantity = t[1];
-		System.out.print(quantity);
+		System.out.print(t);
 		
 	}
 	
