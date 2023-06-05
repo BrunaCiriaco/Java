@@ -15,12 +15,12 @@ public class MainProgram {
 	
 	public void capturingInfo() {
 		File inputMainPath = new File(mainPath);
-		File[] files = inputMainPath.listFiles((dir, name) -> name.endsWith(".txt"));
+		File[] files = inputMainPath.listFiles((dir, name) -> name.endsWith(".dat"));
 		AllData allData = new AllData();
 		
 		if(files != null) {
 			for(File file : files) {
-				String createNewPath =  newPath  + "done.txt";
+				String createNewPath =  newPath  + "done.dat";
 				allData.processFile(file , createNewPath);
 			}
 		}
