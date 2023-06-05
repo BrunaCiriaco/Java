@@ -2,19 +2,19 @@
 Você deve criar um sistema de análise de dados, onde o sistema deve importar lotes de arquivos, ler e analisar os dados e produzir um relatório. 
 Existem 3 tipos de dados dentro desses arquivos. <br>
 Para cada tipo de dados há um layout diferente. 
+
 <h3> <strong> Dados do vendedor </strong> </h3>
 Os dados do vendedor têm o formato id <strong> 001 </strong> e a linha terá o seguinte formato.
-
 <br>  &nbsp; &nbsp; <strong> 001çCPFçNameçSalary </strong> <br>
+
 <h3> <strong> Dados do cliente </strong> </h3>
 Os dados do cliente têm o formato id <strong> 002 </strong> e a linha terá o seguinte formato.
-
 <br>  &nbsp; &nbsp; <strong>  002çCNPJçNameçBusiness Area  </strong> <br>
-
 
 <h3> <strong> Dados de vendas  </strong> </h3>
 Os dados de vendas têm o formato id <strong> 003 </strong> . <br>Dentro da linha de vendas, existe a lista de itens, que é envolto por colchetes [].<br> A linha terá o seguinte formato. 
 <br>  &nbsp; &nbsp; <strong> 003çSale IDç[Item ID-Item Quantity-Item Price]çSalesman name  </strong> <br> 
+
 <h3> <strong> Dados de Exemplo </strong> </h3>
 O seguinte é um exemplo dos dados que o sistema deve ser capaz de ler. <br>
 001ç1234567891234çPedroç50000 <br>
@@ -23,6 +23,7 @@ O seguinte é um exemplo dos dados que o sistema deve ser capaz de ler. <br>
 002ç2345675433444345çEduardo PereiraçRural <br>
 003ç10ç[1-10-100,2-30-2.50,3-40-3.10]çPedro <br>
 003ç08ç[1-34-10,2-33-1.50,3-40-0.10]çPaulo <br>
+
 <h3> <strong> Análise de dados  </strong> </h3>
 Seu sistema deve ler dados do diretório padrão, localizado em% HOMEPATH% / data / in.  <br> 
 O sistema deve ler somente arquivos .dat.  <br> 
